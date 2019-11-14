@@ -1,0 +1,73 @@
+<h1>微博日本</h1>
+
+<h2>需求</h2>
+
+<p>爬取Weibo日本相关博主2018年发布的微博内容</p>
+
+<ol><li>博主信息</li><li>微博内容</li><li>评论内容</li></ol>
+
+<h2>微博参数说明</h2>
+
+<h3>UserInfo</h3>
+
+<p>记录微博用户的信息表</p>
+
+<ul><li><code>screen_name</code> 用户名称</li><li><code>statuses_count</code> 发送微博总量</li><li><code>verified_reason</code> 个人说明</li><li><code>description</code> 个人介绍</li><li><code>followers_count</code> 粉丝数量</li><li><code>follow_count</code> 关注数量</li><li><code>count</code> 在2018年度发送的微博总数</li><li><code>profile_url</code> 主页地址</li></ul>
+
+<p><img alt="" src="http://cdn.lunatic.wang/QQ%E5%9B%BE%E7%89%8720191028161923.png"/></p>
+
+<h3>ContentInfo</h3>
+
+<p>记录微博用户所发的微博</p>
+
+<ul><li><code>screen_name</code> 用户名称</li><li><code>subject_url</code> 微博地址</li><li><code>Time</code> 微博发送时间</li><li><code>reposts_count</code> 转发数</li><li><code>comments_count</code> 评论数</li><li><code>attitudes_count</code> 点赞数</li><li><code>text</code> 微博内容(包含转发的内容)</li><li><code>status</code> 微博类型(原创/转发/视频)</li></ul>
+
+<p><img alt="" src="http://cdn.lunatic.wang/QQ%E5%9B%BE%E7%89%8720191028161917.png"/></p>
+
+<h3>CommentInfo</h3>
+
+<p>记录微博内容评论的内容</p>
+
+<ul><li><code>head_User</code> 被评论的用户 </li><li><code>User</code>评论用户</li><li><code>url</code> 微博评论地址</li><li><code>text</code> 评论内容</li><li><code>created_at</code> 评论时间</li></ul>
+
+<p><img alt="" src="http://cdn.lunatic.wang/QQ%E5%9B%BE%E7%89%8720191028161910.png"/></p>
+
+<h2>微博数据量</h2>
+
+<h3>数据量总数(微博+评论)</h3>
+
+<p>2018年度微博总数 = 6491</p>
+
+<p>2018年度微博评论总数 = 52961</p>
+
+<p>2018年度微博+评论总数 = 59452</p>
+
+<p><strong>注：该数据在收集过程中有些许误差，但误差不到1%。</strong></p>
+
+<h3>日本官微统计</h3>
+
+<h4>2018年度发送微博最多的官方微博</h4>
+
+<ol><li>日本国驻华大使馆 —— 1286</li><li>日本群馬県観光局官方微博 —— 1073</li><li>日本国家旅游局（JNTO）官方微博 —— 422</li></ol>
+
+<h4>2018年度收获评论最多的微博</h4>
+
+<ol><li><a href="https://m.weibo.cn/status/GFP0Q5V2F?mblogid=GFP0Q5V2F&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIBO">日本国驻华大使馆</a> —— 2549</li><li><a href="https://m.weibo.cn/status/GyIPtwnsQ?mblogid=GyIPtwnsQ&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIBO">日本国驻华大使馆</a> —— 1773</li><li><a href="https://m.weibo.cn/status/H6U4NpJdH?mblogid=H6U4NpJdH&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIBOO">日本国驻华大使馆</a> —— 1568</li></ol>
+
+<h4>2018年度收获转发最多的微博</h4>
+
+<ol><li><a href="https://m.weibo.cn/status/GnqggbZS0?mblogid=GnqggbZS0&amp;luicode=10000011&amp;lfid=1076031948233744_-_WEIBO_SECOND_PROFILE_WEIBO">日本国家旅游局-上海</a> —— 11630</li><li><a href="https://m.weibo.cn/status/Gnqiwc34R?mblogid=Gnqiwc34R&amp;luicode=10000011&amp;lfid=1076031781462195_-_WEIBO_SECOND_PROFILE_WEIBO">日本国家旅游局JNTO</a> —— 10781</li><li><a href="https://m.weibo.cn/status/GqLOVnOR2?mblogid=GqLOVnOR2&amp;luicode=10000011&amp;lfid=1076031781462195_-_WEIBO_SECOND_PROFILE_WEIBO">日本国家旅游局JNTO</a> —— 6928</li></ol>
+
+<h4>2018年度收获点赞最多的微博</h4>
+
+<ol><li><a href="https://m.weibo.cn/status/GFP0Q5V2F?mblogid=GFP0Q5V2F&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIBO">日本国驻华大使馆</a> —— 4360</li><li><a href="https://m.weibo.cn/status/G5nB6whEB?mblogid=G5nB6whEB&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIB">日本国驻华大使馆</a> —— 2133</li><li><a href="https://m.weibo.cn/status/GFIJAmPyH?mblogid=GFIJAmPyH&amp;luicode=10000011&amp;lfid=1076031938487875_-_WEIBO_SECOND_PROFILE_WEIBO">日本国驻华大使馆</a> —— 1650</li></ol>
+
+<p><strong>注：点击蓝色微博即可查看该微博</strong></p>
+
+<h4>2018年度评论<strong>微博日本</strong>最多的用户</h4>
+
+<ol><li>sunlei198508 —— 536</li><li>汉斯圆滚滚哟 —— 249</li><li>农产品大王 —— 215</li><li>美asd6078475396 —— 204</li><li>松村和哉 —— 168</li></ol>
+
+<h5>2018年度发送微博最多的日期</h5>
+
+<ol><li>2018-03-01 —— 67</li><li>2018-02-23 —— 54</li><li>2018-02-01 —— 48</li><li>2018-02-03 —— 45</li><li>2018-02-11 —— 43</li></ol>
